@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Touchable
+  - Static
+  - Moneybag
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Ground
+  - Interactable
+  - Trigger
+  - Player
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: back-background
+    uniqueID: 3079329921
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 3533102117
+    locked: 0
+  - name: mid-background
+    uniqueID: 2931657757
+    locked: 0
+  - name: player
+    uniqueID: 3021145547
+    locked: 0
+  - name: foreground
+    uniqueID: 798506561
+    locked: 0
+  - name: UI
+    uniqueID: 3350917811
+    locked: 0

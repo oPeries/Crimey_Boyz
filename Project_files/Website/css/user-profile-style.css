@@ -1,0 +1,93 @@
+h1 {
+    line-height: 1.5em;
+    letter-spacing: -0.05em;
+    margin-bottom: 20px;
+    padding: .1em 0;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+}
+
+p {
+    display: block;
+    line-height: 1.55em;
+    margin-bottom: 22px;
+}
+
+#content {
+    display: block;
+    width: 100%;
+}
+
+#w {
+    margin: 0 auto;
+}
+
+.userdata {
+    display: block;
+    float: initial;
+    margin-left: 10px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.userphoto img {
+    width: 200px;
+}
+
+#profiletabs {
+    display: block;
+    margin-bottom: 4px;
+    height: 50px;
+}
+
+#profiletabs ul {
+    list-style: none;
+    display: block;
+    width: 70%;
+    height: 50px;
+}
+
+#profiletabs ul li a.sel {
+    background: #fff;
+    border-color: #d1cdb5;
+}
+
+#profiletabs ul li a {
+    display: block;
+    float: left;
+    padding: 8px 11px;
+    font-size: 1.2em;
+    font-weight: bold;
+    background: #eae8db;
+    color: #666;
+    margin-right: 7px;
+    border: 1px solid #fff;
+    -webkit-border-radius: 5px;
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-radius: 5px;
+    -moz-border-radius-bottomleft: 0;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+.hidden {
+    display: none;
+}
+.setting {
+    display: block;
+    font-weight: normal;
+    padding: 7px 3px;
+    border-top: 1px solid #d6d1af;
+    margin-bottom: 5px;
+}
+.setting span {
+    float: left;
+    width: 250px;
+    font-weight: bold;
+}

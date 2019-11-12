@@ -1,0 +1,289 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5985252661842094616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 139110418074553229}
+  - component: {fileID: 5004716680205851345}
+  - component: {fileID: 4827437029245729056}
+  - component: {fileID: 7318860231151593047}
+  m_Layer: 0
+  m_Name: GameManagers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &139110418074553229
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5985252661842094616}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8445341693762272326}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5004716680205851345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5985252661842094616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79bb57d7a189f45499bab0ab1bf2dd0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dataRecorder: {fileID: 7318860231151593047}
+  networkedGameStatePrefab: {fileID: 8459098550732007619, guid: 1a4068926155fc647a0ca23a4567c5d3,
+    type: 3}
+  floorsUntilGameOver: 7
+  tabletPlayer: 1
+  groupWin: 0
+  soloWin: 0
+--- !u!114 &4827437029245729056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5985252661842094616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35cc08f93cfd76d48aee40a03b47d7b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterNames:
+  - Alfe
+  - Bort
+  - Chade
+  - Doif
+  - Egad
+  characterSprites:
+  - {fileID: 21300000, guid: 7bcbf47e5f7f6864e8a6678a959b1fcb, type: 3}
+  - {fileID: 21300000, guid: 0a7f91083bfa7b54c8173b973b5f8c75, type: 3}
+  - {fileID: 21300000, guid: 3e8b83a6d719d6f4eb8745d6b75ce1d9, type: 3}
+  - {fileID: 21300000, guid: 68b97922893adc34a826395bd689fafe, type: 3}
+  - {fileID: 21300000, guid: 05bd9f673b8c8b345b7c2b407a7f241c, type: 3}
+--- !u!114 &7318860231151593047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5985252661842094616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a1e6ffab33241443ad0653692409add, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &8445341693762272327
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8445341693762272326}
+  - component: {fileID: 8445341693762272378}
+  - component: {fileID: 8445341693762272376}
+  - component: {fileID: 8445341693762272377}
+  - component: {fileID: 8445341693762272379}
+  - component: {fileID: 1714684297208298208}
+  m_Layer: 0
+  m_Name: NetworkingManagers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8445341693762272326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8445341693762272327}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 139110418074553229}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8445341693762272378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8445341693762272327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb58ca074c7031047893c39fd706e55c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startOnLoad: 0
+  isServer: 0
+  retryUponFailure: 1
+  deniedRetryDelay: 5
+  disonnectedRetryDelay: 2
+--- !u!114 &8445341693762272376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8445341693762272327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1682170820, guid: 01701b64234b4d523d8045142cbc73fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DontDestroy: 1
+  RunInBackground: 1
+  LogLevel: 1
+  NetworkConfig:
+    ProtocolVersion: 0
+    NetworkTransport: {fileID: 8445341693762272377}
+    RegisteredScenes:
+    - Menu
+    - Floor 0
+    - Floor 1
+    - Floor 2
+    - Floor 3
+    - Floor 4
+    - Floor 5
+    - Floor 6
+    - Floor 7
+    - Floor 8
+    - Floor 9
+    - Floor 10
+    - ElevatorInterlude
+    - WinSceneSolo
+    - WinSceneGroup
+    - LoseScene
+    AllowRuntimeSceneChanges: 0
+    NetworkedPrefabs:
+    - Prefab: {fileID: 3026604381846304060, guid: 3b3eff96f6c53d049ab2fd356474ba89,
+        type: 3}
+      PlayerPrefab: 1
+    - Prefab: {fileID: 1611242885417547543, guid: 5fffee8bb35502e4e8542c138846519d,
+        type: 3}
+      PlayerPrefab: 0
+    - Prefab: {fileID: 1611242885417547543, guid: f1ea3598d539a2a46967d3cc1704ff3f,
+        type: 3}
+      PlayerPrefab: 0
+    - Prefab: {fileID: 1611242885417547543, guid: 0279d26016179a5419e6700fbf96f601,
+        type: 3}
+      PlayerPrefab: 0
+    - Prefab: {fileID: 1611242885417547543, guid: f0bc6f3fc39088f4aa70d7d6c4f38f96,
+        type: 3}
+      PlayerPrefab: 0
+    - Prefab: {fileID: 1493632422558680447, guid: 071fed4dbd35f19409873759cda2eaf6,
+        type: 3}
+      PlayerPrefab: 0
+    - Prefab: {fileID: 6271237019973944776, guid: a9da9252c47df9947b9e993c17b1b025,
+        type: 3}
+      PlayerPrefab: 0
+    - Prefab: {fileID: 8459098550732007619, guid: 1a4068926155fc647a0ca23a4567c5d3,
+        type: 3}
+      PlayerPrefab: 0
+    - Prefab: {fileID: 8710112656891425467, guid: b66229fb61763534993cba4b706ca474,
+        type: 3}
+      PlayerPrefab: 0
+    - Prefab: {fileID: 5200624254225008220, guid: ba2524af1f861cc4f8edf32380aea86f,
+        type: 3}
+      PlayerPrefab: 0
+    - Prefab: {fileID: 633799539960840155, guid: 1d7d4223cb027c04db04a6f961885d6b,
+        type: 3}
+      PlayerPrefab: 0
+    PlayerPrefabHash:
+      Value: 1897319656204293034
+    CreatePlayerPrefab: 0
+    ReceiveTickrate: 64
+    MaxReceiveEventsPerTickRate: 500
+    EventTickrate: 64
+    MaxObjectUpdatesPerTick: -1
+    ClientConnectionBufferTimeout: 10
+    ConnectionApproval: 1
+    ConnectionData: 
+    SecondsHistory: 5
+    EnableTimeResync: 0
+    TimeResyncInterval: 30
+    EnableNetworkedVar: 1
+    EnsureNetworkedVarLengthSafety: 0
+    ForceSamePrefabs: 1
+    UsePrefabSync: 0
+    RecycleNetworkIds: 1
+    NetworkIdRecycleDelay: 120
+    RpcHashSize: 0
+    LoadSceneTimeOut: 120
+    EnableEncryption: 0
+    SignKeyExchange: 0
+    ServerBase64PfxCertificate: 
+--- !u!114 &8445341693762272377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8445341693762272327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1554712238, guid: 01701b64234b4d523d8045142cbc73fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MessageBufferSize: 5120
+  MaxConnections: 100
+  ConnectAddress: 127.0.0.1
+  ConnectPort: 7777
+  ServerListenPort: 7777
+  ServerWebsocketListenPort: 8887
+  SupportWebsocket: 0
+  Channels: []
+  UseMLAPIRelay: 0
+  MLAPIRelayAddress: 184.72.104.138
+  MLAPIRelayPort: 8888
+--- !u!114 &8445341693762272379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8445341693762272327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7df9cbdee6bff48bfc535987c0ba18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  broadcastRate: 2
+  discoveryPort: 8002
+  directIP: 127.0.0.1
+  multicastIP: 224.0.1.190
+  discoveryMethod: 0
+--- !u!114 &1714684297208298208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8445341693762272327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7d85c1242651b74780f73e71f6b5365, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
